@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Tyler's Europe Journal</title>
+<title>Tyler's Travel Journal</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -946,8 +946,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 <body>
 
 <header>
-  <h1>Tyler's Europe Journal</h1>
-  <p>Summer 2025 · The Adventure</p>
+  <h1>Tyler's Travel Journal</h1>
+  <p>Summer 2026 · The Adventure</p>
   <div class="header-line"></div>
 </header>
 
@@ -962,8 +962,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 <div id="home-view" class="view active view-pad">
   <div class="intro-hero">
     <div class="intro-hero-inner">
-      <h2 id="intro-title">A Summer Through Europe</h2>
-      <p id="intro-summary">Follow along as Tyler travels through Germany, the Netherlands, Belgium, France, Switzerland, Italy, Spain, and Morocco — from the beer halls of Munich to the medinas of Marrakesh.</p>
+      <h2 id="intro-title">Welcome To My Travel Journal!</h2>
+      <p id="intro-summary">Follow along as I travel through Germany, Netherlands, Belgium, France, Switzerland, Italy, Spain, and Morocco. I will try my best to update this every day, so stay tuned for more!</p>
       <button class="intro-edit-btn" id="intro-edit-btn" style="display:none" onclick="openIntroEdit()">&#9999; Edit intro</button>
     </div>
   </div>
@@ -1023,7 +1023,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 <div id="gallery-view" class="view view-pad">
   <div class="gallery-empty" id="gallery-empty">
     <h3>&#128247; No photos yet</h3>
-    <p style="font-size:.85rem;margin-top:.5rem;color:rgba(26,22,18,.4);">Photos you add to your days will appear here.</p>
+    <p style="font-size:.85rem;margin-top:.5rem;color:rgba(26,22,18,.4);">Check back soon for my first pictures!</p>
   </div>
   <div class="gallery-grid" id="gallery-grid" style="display:none"></div>
 </div>
@@ -1197,7 +1197,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 // ─────────────────────────────────────────────
 // CONFIG
 // ─────────────────────────────────────────────
-const PASSWORD = "tyler2024"; // change this
+const PASSWORD = "W1z@rd5Rul3!"; // change this
 
 // ─────────────────────────────────────────────
 // DEFAULT TRIP DATA
@@ -1513,8 +1513,8 @@ function goToCity(di) {
 // ─────────────────────────────────────────────
 function renderHome() {
   const meta = appData.intro || {};
-  document.getElementById('intro-title').textContent   = meta.title   || 'A Summer Through Europe';
-  document.getElementById('intro-summary').textContent = meta.summary || 'Follow along as Tyler travels through Germany, the Netherlands, Belgium, France, Switzerland, Italy, Spain, and Morocco — from the beer halls of Munich to the medinas of Marrakesh.';
+  document.getElementById('intro-title').textContent   = meta.title   || 'Welcome To My Travel Journal!';
+  document.getElementById('intro-summary').textContent = meta.summary || 'Follow along as I travel through Germany, Netherlands, Belgium, France, Switzerland, Italy, Spain, and Morocco. I will try my best to update this every day, so stay tuned for more!';
 
   const wrap = document.getElementById('video-wrap');
   const ph   = document.getElementById('video-ph');
